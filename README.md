@@ -53,7 +53,7 @@
 ### ۱. کلون کردن پروژه روی سرور
 ابتدا فایل‌های پروژه را در مسیر `/opt/vpn_manager` قرار دهید:
 ```bash
-git clone https://github.com/your-username/vpn_manager.git /opt/vpn_manager
+git clone https://github.com/AmirNaderi1997/SSH-VPN-WebPanel.git /opt/vpn_manager
 cd /opt/vpn_manager
 ```
 
