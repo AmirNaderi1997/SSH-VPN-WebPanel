@@ -1,0 +1,14 @@
+[Unit]
+Description=VPN Manager - WebSocket SSH Proxy
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/vpn_manager
+ExecStart=/opt/vpn_manager/venv/bin/python websocket_proxy.py 8880
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

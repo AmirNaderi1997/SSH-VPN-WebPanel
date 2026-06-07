@@ -1,0 +1,15 @@
+[Unit]
+Description=VPN Manager Web Dashboard (Flask)
+After=network.target mariadb.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/vpn_manager/webapp
+ExecStart=/opt/vpn_manager/venv/bin/python app.py
+Restart=always
+RestartSec=5
+Environment=SECRET_KEY=vpnmanager-secret-change-me-2024
+
+[Install]
+WantedBy=multi-user.target
